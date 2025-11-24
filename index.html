@@ -56,17 +56,17 @@
           <button class="main1_ipcopier" onclick="copyText()" type="button">
             <span class="main1_ipcopier_text1">play.example.com</span>
             <br>
-            <span class="main1_ipcopier_text2">Click to copy</span>
+            <span class="main1_ipcopier_text2">Klicke zum Kopieren.</span>
           </button>
           <script>
             function copyText() {
                 navigator.clipboard.writeText
-            ("play.example.com");
+            ("play.ralfpro.de");
                 }
             $(document).ready(function() {
             $('.main1_ipcopier').click(function() {
                 var popup = $('<div>', { class: 'main1_popup' })
-                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
+                .append($('<h3 class="copy_confirm">').text('IP in die Zwischenablage Kopiert!'))
                 $(this).after(popup);
                 setTimeout(function() {
                 popup.remove();
@@ -95,12 +95,12 @@
       </div>
       <div id="more"></div>
       <div class="main2">
-        <a class="headline">What we have</a>
+        <a class="headline">Unsere Gamemodes</a>
         <div class="main2_features_div">
           <div class="main2_feature">
             <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 1</a>
-            <a class="main2_feature_text">Feature description</a>
+            <a class="main2_feature_headline">CityBuild</a>
+            <a class="main2_feature_text">Bau dir dein Plot auf, sammle Ressourcen und hab Spaß!</a>
           </div>
           <div class="main2_feature">
             <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
